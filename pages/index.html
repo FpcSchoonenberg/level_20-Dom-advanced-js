@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmzoeker</title>
-    <script defer src="/script/index.js"></script>
-    <link rel="stylesheet" href="/css/index.css">
+    <script src="../script/dataset.js" defer></script>
+    <script src="../script/functions.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <nav>
+            <input type="radio" id="avenger" name="moviefilter" value="avenger" class ="filter__button">
+            <label for="avengermovie" class="filter__text">Avenger films</label>
+            <input type="radio" id="x-men" name="moviefilter" value="x-men" class ="filter__button">
+            <label for="xmenmovie" class="filter__text">X-men films</label>
+            <input type="radio" id="princess" name="moviefilter" value="princess" class ="filter__button">
+            <label for="princessmovie" class="filter__text">Princess films</label>
+            <input type="radio" id="batman" name="moviefilter" value="batman" class ="filter__button">
+            <label for="batmanmovie" class="filter__text">Batman films</label>
+            <br>
+            <input type="radio" id="2014orlater" name="moviefilter" value="2014orlater" class ="filter__button">
+            <label for="2014orlatermovies" class="filter__text">Laatste films 2014 of later</label>
+        </nav>
+        <main>
+            <ul id="filteredMovies" class ="imagelist">
+                <!-- filtered movies will be placed here -->
+            </ul>
+        </main>
+    </div>
 </body>
+
 </html>
